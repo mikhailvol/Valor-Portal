@@ -160,15 +160,12 @@ p {
 }
 
 .user-photo {
+  overflow: hidden;
   width: 85px;
   height: 85px;
   margin-bottom: 10px;
   border: 1px solid #f0f2f6;
   border-radius: 50%;
-  background-image: url('../images/7.jpg');
-  background-position: 50% 50%;
-  background-size: cover;
-  background-repeat: no-repeat;
 }
 
 .user-name {
