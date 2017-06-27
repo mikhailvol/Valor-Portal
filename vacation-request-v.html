@@ -1,9 +1,10 @@
 <!DOCTYPE html>
 <!--  Last Published: Tue Jun 27 2017 11:17:03 GMT+0000 (UTC)  -->
-<html data-wf-page="59490a18238fc14722ab9064" data-wf-site="592bc79d343cf932d3318024">
+<html data-wf-page="59490a18238fc14722ab9066" data-wf-site="592bc79d343cf932d3318024">
 <head>
   <meta charset="utf-8">
-  <title>Valor Portal</title>
+  <title>Vacation request Validation</title>
+  <meta content="Vacation request Validation" property="og:title">
   <meta content="width=device-width, initial-scale=1" name="viewport">
   <link href="css/normalize.css" rel="stylesheet" type="text/css">
   <link href="css/components.css" rel="stylesheet" type="text/css">
@@ -51,8 +52,46 @@
       </div>
       <div class="main-col">
         <div class="main-content">
-          <h1 class="main-heading">Hey Mate!</h1>
-          <p class="welcome-text">Welcome at Valor Software Portal. Here is the link to all corporate documents. You can find all information about company processes assets, technical documentation, etc.</p><a class="button w-button" href="https://drive.google.com/drive/folders/0B2Kj9KbtRgdCLVJJOVdyc3hLWU0?usp=sharing" target="_blank">Have a look »</a>
+          <h2 class="heading">Vacation Request</h2>
+          <p class="paragraph"><strong class="important-text">Reed these rules carefully before request!</strong>
+          </p>
+          <div class="rules-list">
+            <p class="paragraph">Your vacation days will be available after 6 months employment;</p>
+            <p class="paragraph">If you need a forced vacation, it should be discussed upfront, and only then you can mark forced request checkbox;</p>
+            <p class="paragraph">If &nbsp;you want to divide vacation you should split days in order to receive 2 calendar weeks vacation and 1 calendar week. Or vice versus.</p>
+          </div>
+          <div class="vac-req-wrap w-form">
+            <form class="vac-req-form" data-name="vacation request" id="wf-form-vacation-request" name="wf-form-vacation-request">
+              <div class="vac-req-from">
+                <label class="label" for="From">From:</label>
+                <input class="input w-input wrong" data-name="From" id="From" maxlength="256" name="From" placeholder="01.12.17" required="required" type="text">
+              </div>
+              <div class="vac-req-to">
+                <label class="label" for="To">To:</label>
+                <input class="input w-input wrong" data-name="To" id="To" maxlength="256" name="To" placeholder="20.12.17" required="required" type="text">
+              </div>
+              <div class="wrong-message">
+                <div class="wrong-icon">!</div>
+                <p class="paragraph-2">This date range does not comply with our internal rules policies. Select other date range or mark checkbox below to continue.</p>
+              </div>
+              <div class="vac-req-force">
+                <div class="w-checkbox">
+                  <input class="w-checkbox-input" data-ix="checkbox-force-request" data-name="Checkbox" id="checkbox" name="checkbox" type="checkbox">
+                  <label class="force-req-label w-form-label" data-ix="checkbox-force-request" for="checkbox">I know rules, but I need Force Request</label>
+                </div>
+              </div>
+              <div class="submit-wrap">
+                <div class="cover"></div>
+                <input class="button vac-req w-button" data-wait="Please wait..." type="submit" value="Request Vacation">
+              </div>
+            </form>
+            <div class="success-message w-form-done">
+              <div>Your request will be reviewed soon! Wait for an e-mail.</div>
+            </div>
+            <div class="w-form-fail">
+              <div>Oops! Something went wrong while submitting the form</div>
+            </div>
+          </div>
         </div>
         <div class="footer">
           <div class="social-icons-wrap">
